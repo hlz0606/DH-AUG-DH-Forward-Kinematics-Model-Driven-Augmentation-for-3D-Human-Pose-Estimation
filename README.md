@@ -97,3 +97,16 @@ python3 run_Fk_GAN.py --note posefk --posenet_name 'videopose' --lr_p 1e-4  --ch
 # VPose (video mode)
  python3 run_Fk_GAN.py --note posefk --posenet_name 'mulit_farme_videopose' --lr_p 1e-3 --checkpoint './checkpoint/posefk' --keypoints gt --s1only False --GAN_whether_use_preAngle True  --single_or_multi_train_mode multi --video_over_200mm False --batch_size 512  --data_enhancement_method 'GAN' --downsample 10 --additional_LR_decay 0.95 --warmup  20 --single_dis_warmup_epoch 4 --architecture '3,3'
 
+## Citation
+If you  find this code useful for your research, please consider citing the following paper:
+
+    @inproceedings{gong2021poseaug,
+      title       = {DH-AUG: DH Forward Kinematics Model Driven Augmentation for 3D Human Pose Estimation},
+      author      = {Linzhi Huang, Jiahao Liang, Weihong Deng},
+      booktitle   = {ECCV},
+      year        = {2022}
+    }
+
+## Acknowledgements
+This code uses ([SemGCN](https://github.com/garyzhao/SemGCN), [SimpleBL](https://github.com/una-dinosauria/3d-pose-baseline), [PoseAUG](https://github.com/jfzhang95/PoseAug) and [VPose3D](https://github.com/facebookresearch/VideoPose3D)) as backbone. We gratefully appreciate the impact these libraries had on our work. If you use our code, please consider citing the original papers as well.
+
