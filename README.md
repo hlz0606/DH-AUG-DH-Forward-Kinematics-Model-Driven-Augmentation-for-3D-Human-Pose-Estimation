@@ -7,7 +7,7 @@ ECCV 2022
 
 ## Prepare dataset
 # [Human3.6M]
-The code for Human3.6M data preparation is borrowed from [VideoPose3D], [SemGCN], [EvoSkeleton].
+The code for Human3.6M data preparation is borrowed from [VideoPose3D], [SemGCN], [EvoSkeleton], [PoseAug].
 
 
 * Setup from preprocessed dataset
