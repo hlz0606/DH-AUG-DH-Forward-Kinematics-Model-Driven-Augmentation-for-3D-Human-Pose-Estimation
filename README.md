@@ -89,5 +89,11 @@ All the data are set up.
 
 
 ##  training   
+Examples of training the baseline model with DH-Aug:
+If you want to explore better performance for specific setting, please try changing the hyper-param.
+# VPose (single-frame)
+python3 run_Fk_GAN.py --note posefk --posenet_name 'videopose' --lr_p 1e-4  --checkpoint './checkpoint/posefk' --keypoints gt --s1only False --GAN_whether_use_preAngle True  --video_over_200mm False --batch_size 1024  --data_enhancement_method 'GAN'  --additional_LR_decay 0.95 --Gen_DenseDim 256 --Dis_DenseDim_3D 256  --Dis_DenseDim_2D  256
 
+# VPose (video mode)
+ python3 run_Fk_GAN.py --note posefk --posenet_name 'mulit_farme_videopose' --lr_p 1e-3 --checkpoint './checkpoint/posefk' --keypoints gt --s1only False --GAN_whether_use_preAngle True  --single_or_multi_train_mode multi --video_over_200mm False --batch_size 512  --data_enhancement_method 'GAN' --downsample 10 --additional_LR_decay 0.95 --warmup  20 --single_dis_warmup_epoch 4 --architecture '3,3'
 
