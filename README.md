@@ -104,7 +104,7 @@ python3 run_Fk_GAN.py --note posefk --posenet_name 'videopose' --lr_p 1e-4  --ch
 ## Citation
 If you  find this code useful for your research, please consider citing the following paper:
 
-    @inproceedings{gong2021poseaug,
+    @inproceedings{Huang2022DH-AUG,
       title       = {DH-AUG: DH Forward Kinematics Model Driven Augmentation for 3D Human Pose Estimation},
       author      = {Linzhi Huang, Jiahao Liang, Weihong Deng},
       booktitle   = {ECCV},
