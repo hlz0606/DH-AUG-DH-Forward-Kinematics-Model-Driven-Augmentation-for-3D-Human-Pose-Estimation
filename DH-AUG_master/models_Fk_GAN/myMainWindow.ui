@@ -1,0 +1,1437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1900</width>
+    <height>980</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox_groundTruth">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>441</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>groundTruth</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="but_clearScreem">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>60</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>clear screen</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="but_generater">
+    <property name="geometry">
+     <rect>
+      <x>1350</x>
+      <y>710</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gernerator 3D</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="but_showMode">
+    <property name="geometry">
+     <rect>
+      <x>1360</x>
+      <y>860</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>rollbar_mode</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>770</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J7</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint9">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>850</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint5">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>890</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint6">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>730</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint10">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>890</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J10</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint32">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>810</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>730</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J6</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint34">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>890</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J34</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint1">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>730</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J1</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint2">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>770</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint7">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>770</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint29">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>890</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint4">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>850</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J4</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint31">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>770</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint25">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>730</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint26">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>770</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint29">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>890</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J29</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint1">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>730</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>810</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J8</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint34">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>890</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_title5">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>690</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>left hand</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint4">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>850</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint32">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>810</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J32</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>850</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J9</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint3">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>810</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint25">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>730</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J25</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_title4">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>690</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>right hand</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_title1">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>690</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>right leg</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint5">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>890</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J5</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint30">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>730</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J30</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint8">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>810</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint27">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>810</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J27</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint3">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>810</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint33">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>850</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J33</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_title2">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>690</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>left leg</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint27">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>810</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint31">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>770</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J31</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint26">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>770</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J26</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint30">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>730</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint28">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>850</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J28</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint28">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>850</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint10">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>890</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint2">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>770</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J2</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint33">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>850</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint13">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>160</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint24">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>580</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint18">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>350</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J18</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint19">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>390</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint15">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>240</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J15</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint15">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>240</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint13">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>160</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J13</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_title3">
+    <property name="geometry">
+     <rect>
+      <x>1244</x>
+      <y>50</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>body</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_join16">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>280</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint11">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>90</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J11</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint12">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>120</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J12</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint23">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>540</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J23</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint11">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>90</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint18">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>350</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint14">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>200</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J14</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint17">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>310</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J17</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint20">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>430</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint24">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>580</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J24</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint21">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>460</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J21</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint12">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>120</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint16">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>280</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint20">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>430</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J20</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint23">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>540</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint22">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>500</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint22">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>500</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J22</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint17">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>310</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint14">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>200</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_joint19">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>390</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>J19</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_joint21">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>460</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_generator_3d">
+    <property name="geometry">
+     <rect>
+      <x>1490</x>
+      <y>720</y>
+      <width>118</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_global_x">
+    <property name="geometry">
+     <rect>
+      <x>1530</x>
+      <y>270</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_global_z">
+    <property name="geometry">
+     <rect>
+      <x>1470</x>
+      <y>350</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>global z</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_global_y">
+    <property name="geometry">
+     <rect>
+      <x>1530</x>
+      <y>310</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="bar_global_z">
+    <property name="geometry">
+     <rect>
+      <x>1530</x>
+      <y>350</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_global_x">
+    <property name="geometry">
+     <rect>
+      <x>1470</x>
+      <y>270</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>global x</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_global_y">
+    <property name="geometry">
+     <rect>
+      <x>1470</x>
+      <y>310</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>global y</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_generator">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>80</y>
+      <width>441</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>generator</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_groundTruth_frame">
+    <property name="geometry">
+     <rect>
+      <x>1490</x>
+      <y>40</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>groundTruth frame</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_groundTruth_frame">
+    <property name="geometry">
+     <rect>
+      <x>1630</x>
+      <y>50</y>
+      <width>113</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="but_GAN_generater">
+    <property name="geometry">
+     <rect>
+      <x>1350</x>
+      <y>770</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GAN gernerator 3D</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_GAN_generator_3d">
+    <property name="geometry">
+     <rect>
+      <x>1490</x>
+      <y>780</y>
+      <width>118</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_generator_num">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>710</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>number:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_GAN_generator_num">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>770</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>number:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1900</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
