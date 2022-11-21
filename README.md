@@ -7,7 +7,7 @@ Linzhi Huang, Jiahao Liang,Weihong Deng*
 
 ECCV 2022 
 
-[[paper](https://arxiv.org/pdf/2207.09303v1.pdf)]
+[[paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136660427.pdf)]
 
 ## Dataset setup
 ### [Human3.6M](http://vision.imar.ro/human3.6m/)
